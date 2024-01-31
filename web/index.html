@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OM Azonosító Kereső</title>
+</head>
+
+<body>
+    <div class="container">
+        <label for="omInput">OM Azonosító:</label>
+        <input type="text" id="omInput" maxlength="11" pattern="\d{11}" title="Pontosan 11 számjegy engedélyezett">
+        <button onclick="searchOM()">Keresés</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

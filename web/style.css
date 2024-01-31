@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #000;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ffd700;
+    color: #000;
+}
+
+tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+button {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Media Query for tablets and larger screens */
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+    }
+
+    table {
+        display: table;
+        /* Visszaállítjuk a táblázat normál viselkedését */
+    }
+
+    tr {
+        display: table-row;
+        /* Visszaállítjuk a táblázatsorok normál viselkedését */
+    }
+
+    th,
+    td {
+        display: table-cell;
+        /* Visszaállítjuk a táblázatcellák normál viselkedését */
+    }
+}
+
+/* Media Query for desktops and larger screens */
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 800px;
+    }
+}
