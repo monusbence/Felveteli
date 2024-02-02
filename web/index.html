@@ -9,12 +9,24 @@
 </head>
 
 <body>
-    <div class="container">
-        <label for="omInput">OM Azonosító:</label>
-        <input type="text" id="omInput" maxlength="11" pattern="\d{11}" title="Pontosan 11 számjegy engedélyezett">
-        <button onclick="searchOM()">Keresés</button>
-        <div id="result"></div>
-    </div>
+    <label for="omIdInput">Add meg az OM Azonosítót!</label>
+    <input type="text" id="omIdInput" oninput="searchOMById()">
+    <label id="hiba"></label>
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>OM Azonositó</th>
+                <th>Neve</th>
+                <th>ÉrtesÍtési Címe</th>
+                <th>Email</th>
+                <th>Születési Dátum</th>
+                <th>Matematika</th>
+                <th>Magyar</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     <script src="script.js"></script>
 </body>
 
