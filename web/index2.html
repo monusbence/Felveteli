@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>OM Azonosító Kereső</title>
+</head>
+
+<body>
+
+    <label for="omIdInput">Add meg az OM Azonosítót!</label>
+    <input type="text" id="omIdInput" oninput="searchOMById()">
+    <label for="nevInput">Add meg a nevet!</label>
+    <input type="text" id="nevInput" oninput="searchOMById()"> 
+    <label id="hiba"></label>
+    <label id="tetelekSzama">Tételek száma: 0 db</label>
+    <label id="MatekAtlaga">Matematika pontszámok átlaga: 0</label>
+    <label id="MagyarAtlaga">Magyar pontszámok átlaga: 0</label>
+    <label id="OsszAtlag">Összesített pontszámok átlaga: 0</label>
+
+    <div id="cardContainer" class="card-container">
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
