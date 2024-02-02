@@ -195,10 +195,10 @@ function updateSliderValue() {
                 return (item.Matematika + item.Magyar) >= osszesitettPont;
             });
 
-            var tableHTML = "<table border='1'><tr><th>OM Azonosito</th><th>Neve</th><th>Ertesitesi Cime</th><th>Email</th><th>Szuletesi Datum</th><th>Matematika</th><th>Magyar</th></tr>";
+            var tableHTML = "<table border='1'><tr><th>OM Azonosito</th><th>Neve</th><th>Matematika</th><th>Magyar</th><th> Osszesitet</th></tr>";
 
             for (var i = 0; i < filteredData.length; i++) {
-                tableHTML += "<tr><td>" + filteredData[i].OM_Azonosito + "</td><td>" + filteredData[i].Neve + "</td><td>" + filteredData[i].ErtesitesiCime + "</td><td>" + filteredData[i].Email + "</td><td>" + filteredData[i].SzuletesiDatum + "</td><td>" + filteredData[i].Matematika + "</td><td>" + filteredData[i].Magyar + "</td></tr>";
+                tableHTML += "<tr><td>" + filteredData[i].OM_Azonosito + "</td><td>" + filteredData[i].Neve + "</td><td>" + filteredData[i].Matematika + "</td><td>" + filteredData[i].Magyar + "</td><td>" + (filteredData[i].Magyar + filteredData[i].Matematika) + "</td></tr>";
             }
 
             tableHTML += "</table>";
@@ -211,5 +211,5 @@ function updateSliderValue() {
         // Hide the loading overlay after 5 seconds
         setTimeout(function () {
             document.getElementById('loading-overlay').style.display = 'none';
-        }, 5000);
+        }, 3000);
     });
