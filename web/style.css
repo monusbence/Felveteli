@@ -37,18 +37,66 @@ table {
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
 th {
     background-color: #ffd700;
     color: #000;
 }
 
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-overlay img {
+    width: 50px;
+    height: 50px;
+}
+
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: white;
+}
+
+#loading-overlay img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+#loading-overlay p {
+    margin-top: 10px;
+    font-size: 50px;
+}
+
 @media only screen and (max-width: 600px) {
-    th, td {
+
+    th,
+    td {
         padding: 8px;
     }
 }
