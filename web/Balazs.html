@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniKozfelvir</title>
+    <link rel="stylesheet" href="balazsCss.css">
+</head>
+
+<body>
+    <div id="loading-overlay">
+        <img src="1474.gif" alt="Loading..." />
+        <p>Betöltés...</p>
+    </div>
+
+    <section id="section1">
+        <img src="logo.png" alt="">
+    </section>
+
+    <section id="section2">
+
+        <div id="form-container">
+
+            <p>Add meg az összesített pontszámot</p>
+            <input type="text" id="osszesitett" placeholder="pl.: 60" />
+            <button onclick="generateTable()">Küldés</button>
+
+        </div>
+        <div id="tablazat">
+
+        </div>
+        <textarea id="responsive-textarea" readonly></textarea>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Ütvefúró maktia KFT. Olajozó bt Powered by:  BMW <span class="m">M </span><span class="power">Power</span></p>
+    </footer>
+    <script src="balazsJs.js" defer></script>
+    </body>
